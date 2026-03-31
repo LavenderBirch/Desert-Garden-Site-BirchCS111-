@@ -1,0 +1,94 @@
+/* General Page Style */
+body {
+    font-family: "Trebuchet MS", "Comic Sans MS", cursive, sans-serif;
+    background: linear-gradient(135deg, #f3f0ff, #e6f7ff, #eaffea);
+    margin: 0;
+    color: #444;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #d6ccff, #cceeff);
+    text-align: center;
+    padding: 30px;
+    border-bottom: 4px dashed #fff4cc;
+}
+
+header h1 {
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    color: #5a4fcf;
+    text-shadow: 2px 2px #ffffff;
+}
+
+/* Main Layout - FLEXBOX FIX */
+main {
+    display: flex;
+    justify-content: center;   /* centers horizontally */
+    gap: 30px;                 /* space between columns */
+    padding: 30px;
+    flex-wrap: wrap;           /* responsive for small screens */
+}
+
+/* Two Columns */
+section {
+    width: 400px;              /* fixed width for better centering */
+    background: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    backdrop-filter: blur(4px);
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+section:hover {
+    transform: translateY(-5px);
+}
+
+/* Alternate color */
+section:last-child {
+    background: rgba(230, 255, 230, 0.7);
+}
+
+/* Headings */
+h2 {
+    color: #7a6de0;
+    border-bottom: 2px dotted #fff4cc;
+    padding-bottom: 5px;
+}
+
+/* Paragraphs */
+p {
+    line-height: 1.6;
+}
+
+/* Image */
+img {
+    float: right;
+    width: 220px;
+    margin: 10px;
+    border-radius: 15px;
+    border: 3px solid #fff4cc;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: linear-gradient(90deg, #fff4cc, #d6ffea);
+    padding: 20px;
+    margin-top: 30px;
+    border-top: 4px dashed #d6ccff;
+    font-size: 0.9em;
+}
+
+/* Decorative sparkle */
+body::after {
+    content: "✿ ✦ ✿ ✦ ✿";
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+    opacity: 0.2;
+    font-size: 18px;
+}
